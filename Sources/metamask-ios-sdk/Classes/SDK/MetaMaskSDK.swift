@@ -66,6 +66,7 @@ public class MetaMaskSDK: ObservableObject {
         self.tracker.enableDebug = enableDebug
         self.account = ethereum.account
         self.chainId = ethereum.chainId
+        self.connected = ethereum.connected
         setupAppLifeCycleObservers()
     }
     
